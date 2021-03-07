@@ -1,0 +1,24 @@
+Seu objetivo é desenvolver um game para Web (WebGL) que tenha as seguintes características:
+
+ - Engine: Unity3D;
+ - Linguagem de programação: C#;
+ - Arte: 3D. Os Assets podem ser encontrados gratuitamente na Asset Store, caso tenham interesse podem utilizar o Probuilder ou outra ferramenta de modelagem (3dMax ou Blender) para gerar os próprios assets, contudo, não será um critério de avaliação;
+ - Repositório: O código deverá ser uppado no github para análise da organização e limpeza;
+ - Build: Deve ser em WebGL e hospedado em um servidor para nossa análise (itch.io, Unity Play ou similar)
+ - Lógica do jogo: Arremessar uma bola em uma cesta para marcar o ponto;
+ - Regras do jogo:
+   * O objetivo é acertar a cesta;
+   * O jogador terá duas variáveis para controlar: força e angulação. Essas variáveis deverão ser setadas de forma interativa em componentes animados, assim, ao clicar no componente a variável em questão é definida. Ao preencher as duas variáveis a bola é lançada e percorre uma trajetória de acordo com as variáveis;
+
+   * Extras (regras bônus caso você tenha tempo e queira implementar):
+     * Ao marcar um ponto, uma animação com partículas é exibida na tela;
+     * Implementação do HUD com pontuação, tempo e número de arremessos;
+     * A cada acerto o jogador muda de posição e deverá setar outro conjunto (força x angulação) para acertar a cesta.
+
+ - Prazo: 7 dias
+ - Critérios para avaliação:
+   * Pontualidade na entrega;
+   * Zero erros de sistema (crashs n bugs);
+   * Código fonte legível, estruturado, comentado e com boas práticas de programação;
+   * Adequação aos requisitos solicitados;
+   * A identidade visual não será um critério eliminatório, mas poderá ser utilizado para desempate. Ou seja, se sobrar tempo, tente deixar o mais bonito que conseguir! =)
