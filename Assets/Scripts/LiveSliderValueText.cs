@@ -8,7 +8,7 @@ public class LiveSliderValueText : MonoBehaviour
 
     private TextMeshProUGUI valueText;
 
-    private void Start() 
+    private void Start()
     {
         valueText = transform.GetComponent<TextMeshProUGUI>();
         Debug.Log(valueText.transform.name);
@@ -24,6 +24,7 @@ public class LiveSliderValueText : MonoBehaviour
 
     public void OnForceValueChanged(float value)
     {
-        valueText.text = $"{value}f";
+        value = Mathf.RoundToInt(value);
+        valueText.text = $"{value}F";
     }
 }

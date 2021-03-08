@@ -5,7 +5,7 @@ using UnityEngine;
 public class BallController : MonoBehaviour
 {
     private Rigidbody ballRb;
-    public float throwForce = 100;
+    public float throwForce;
     public float angle;
     private Vector3 throwDirection;
 
@@ -16,6 +16,8 @@ public class BallController : MonoBehaviour
         ballRb = transform.GetComponent<Rigidbody>();
 
         angle = 45;
+
+        throwForce = 500;
 
         throwDirection = new Vector3(0, Mathf.Sin(Mathf.Deg2Rad * angle), Mathf.Cos(Mathf.Deg2Rad * angle));
 
@@ -41,7 +43,6 @@ public class BallController : MonoBehaviour
         ballRb.AddForce(throwDirection * throwForce);
     }
 
-
     public void ListenToAngleValue(float value)
     {
         angle = Mathf.RoundToInt(value);
@@ -51,7 +52,6 @@ public class BallController : MonoBehaviour
     {
         throwForce = Mathf.RoundToInt(value);
     }
-
 
     private void ResetBallPosition()
     {
